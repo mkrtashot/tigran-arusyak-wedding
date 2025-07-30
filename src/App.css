@@ -110,34 +110,6 @@
     flex-direction: column;
 }
 
-.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root {
-  color: white !important;
-}
-
-input::placeholder {
-  color: white !important;
-}
-
-.css-5h82ro-MuiInputBase-root-MuiInput-root {
-  color: white !important;
-}
-
-.css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-}
-
-.css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-  color: white !important;
-}
-
-.css-5h82ro-MuiInputBase-root-MuiInput-root::after {
-  border-bottom: 2px solid white;
-}
-
-.css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
-  color: white !important;
-}
-
 .vrdznagir {
   font-family: 'Vrdznagir', Arial, sans-serif;
 }
