@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Vrdznagir';
+    src: url('./fonts/Vrdznagir.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dzeragir';
+    src: url('./fonts/Dzeragir.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#root {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.first-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/1.jpg');
+  background-size: cover;
+  color: white;
+  background-position: center 10%;
+}
+
+.invitation-button {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invitation-text-container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.invitation-text-container > div:nth-child(1) {
+  font-size: 22px;
+}
+
+.invitation-text-container > div:nth-child(2) {
+  font-size: 22px;
+}
+
+.invitation-text-container > div:nth-child(3) {
+  font-size: 27px;
+}
+
+.image-container {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.church-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/church.jpg');
+}
+
+.zags-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/zags.jpg');
+  margin-top: 10px;
+}
+
+.wedding-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/villaHills.jpg');
+  margin-top: 10px;
+}
+
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  color: white;
+  margin-top: 10px;
+}
+
+.result-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root {
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.css-5h82ro-MuiInputBase-root-MuiInput-root {
+  color: white !important;
+}
+
+.css-2hy7sk-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+}
+
+.css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+.css-5h82ro-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 2px solid white;
+}
+
+.css-1ew92b2-MuiFormLabel-root-MuiInputLabel-root {
+  color: white !important;
+}
+
+.vrdznagir {
+  font-family: 'Vrdznagir', Arial, sans-serif;
+}
+
+.Dzeragir {
+  font-family: 'Dzeragir', Arial, sans-serif;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.first-container > .MuiBox-root {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.form-container > div:nth-child(1) {
+  padding-top: 255px;
+  font-size: 24px;
+}

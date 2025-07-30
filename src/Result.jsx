@@ -1,0 +1,33 @@
+import confetti from "canvas-confetti";
+
+function Result({ accepted }) {
+  if (accepted) {
+    const duration = 1 * 1000;
+    const animationEnd = Date.now() + duration;
+
+    const colors = ["#bb0000", "#ffffff", "#00bb00", "#0000bb"];
+
+    (function frame() {
+      confetti({
+        particleCount: 4,
+        angle: Math.random() * 360,
+        spread: 60,
+        origin: {
+          x: Math.random(),
+          y: Math.random() * 0.6,
+        },
+        colors,
+      });
+
+      if (Date.now() < animationEnd) {
+        requestAnimationFrame(frame);
+      }
+    })();
+  }
+  const text = accepted
+    ? "Սիրով կսպասենք ձեզ"
+    : "Շատ ափսոս, որ չես կարող ներկա գտնվել";
+  return <div className="result-container">{text}</div>;
+}
+
+export default Result;
