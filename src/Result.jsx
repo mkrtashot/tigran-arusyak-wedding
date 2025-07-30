@@ -25,9 +25,9 @@ function Result({ accepted }) {
     })();
   }
   const text = accepted
-    ? "Սիրով կսպասենք ձեզ"
-    : "Շատ ափսոս, որ չես կարող ներկա գտնվել";
-  return <div className="result-container">{text}</div>;
+    ? "Սիրով կսպասենք Ձեզ"
+    : "Շատ ափսոս, որ չեք կարող ներկա գտնվել";
+  return <div className="result-container vrdznagir">{text}</div>;
 }
 
 export default Result;

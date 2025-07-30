@@ -103,6 +103,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  color: white;
+  font-size: 40px;
 }
 
 .checkbox-container {

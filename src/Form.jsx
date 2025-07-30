@@ -16,7 +16,7 @@ function Form({ setAccepted }) {
     isDeclined: false,
   });
   const onClick = () => {
-    if (formData.name && formData.count && formData.agreement !== undefined) {
+    if (formData.name && (formData.isAccepted || formData.isDeclined)) {
       const googleFormData = new FormData();
       googleFormData.append("entry.1901673953", formData.name);
       googleFormData.append("entry.293808420", formData.count);
@@ -25,19 +25,21 @@ function Form({ setAccepted }) {
         formData.agreement ? "Yes" : "No"
       );
 
+      setAccepted(formData.isAccepted);
+      setFormData({
+        name: "",
+        count: "",
+        isAccepted: false,
+        isDeclined: false,
+      });
       fetch(formUrl, {
         method: "POST",
         body: googleFormData,
         mode: "no-cors",
-      })
-        .then(() => {
-          setAccepted(formData.isAccepted);
-          setFormData({ name: "", count: "", agreement: undefined });
-        })
-        .catch((error) => {
-          alert("Error submitting form");
-          console.error("Error:", error);
-        });
+      }).catch((error) => {
+        alert("Error submitting form");
+        console.error("Error:", error);
+      });
     }
   };
   const onNameChange = (e) => {
@@ -52,7 +54,6 @@ function Form({ setAccepted }) {
   const onDisagreeChange = () => {
     setFormData({ ...formData, isAccepted: false, isDeclined: true });
   };
-  console.log(formData);
   return (
     <div className="form-container">
       <div>Խնդրում ենք հաստատել Ձեր մասնակցությունը հարսանիքին</div>
