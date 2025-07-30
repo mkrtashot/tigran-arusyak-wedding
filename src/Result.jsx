@@ -5,7 +5,7 @@ function Result({ accepted }) {
     const duration = 1 * 1000;
     const animationEnd = Date.now() + duration;
 
-    const colors = ["#bb0000", "#ffffff", "#00bb00", "#0000bb"];
+    const colors = ["#ffffff"];
 
     (function frame() {
       confetti({
