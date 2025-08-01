@@ -6,7 +6,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Button from "@mui/material/Button";
 
 const formUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSeqViOgXhdYb99zLVRfN7CJfK8FwedxI3bfZqrxwdBpnrtWAg/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSf9dg2j3JQmwRai0twWX00ltIM72mYj3GD55JNXrbF-dx2-Fg/formResponse";
 
 function Form({ setAccepted }) {
   const [formData, setFormData] = useState({
@@ -18,11 +18,11 @@ function Form({ setAccepted }) {
   const onClick = () => {
     if (formData.name && (formData.isAccepted || formData.isDeclined)) {
       const googleFormData = new FormData();
-      googleFormData.append("entry.1901673953", formData.name);
-      googleFormData.append("entry.293808420", formData.count);
+      googleFormData.append("entry.1222718508", formData.name);
+      googleFormData.append("entry.213201405", formData.count);
       googleFormData.append(
-        "entry.90553502",
-        formData.agreement ? "Yes" : "No"
+        "entry.681730125",
+        formData.isAccepted ? "Yes" : "No"
       );
 
       setAccepted(formData.isAccepted);
